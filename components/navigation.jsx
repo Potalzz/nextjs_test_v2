@@ -10,10 +10,16 @@ export default function Navigation() {
       <nav className={styles.nav}>
         <ul>
           <li>
-            <Link href="/">Home</Link> {path === "/" ? "👍" : ""}
+            <Link prefetch href="/">
+              Home
+            </Link>{" "}
+            {path === "/" ? "👍" : ""}
           </li>
           <li>
-            <Link href="/items">items</Link> {path === "/items" ? "👍" : ""}
+            <Link prefetch href="/items">
+              items
+            </Link>{" "}
+            {path === "/items" ? "👍" : ""}
           </li>
         </ul>
       </nav>
